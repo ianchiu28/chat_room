@@ -8,11 +8,11 @@
 
 <body>
 <div id='content'>
-	<div id='room'></div>
-	<div id='room-list'></div>
-	<div id='messages'></div>
+	<div id='room'></div> <!--當前聊天室名稱將被展示在這個div中-->
+	<div id='room-list'></div> <!--有效聊天室清單將被展示在這個div中-->
+	<div id='messages'></div> <!--聊天訊息將被展示在這個div中-->
 	
-<form id='send-form'>
+<form id='send-form'> <!--表單輸入元素，使用者將在裡頭輸入命令及訊息-->
 	<input id='send-message' />
 	<input id='send-button' type='submit' value='Send' />
 	
@@ -26,10 +26,9 @@
 </form>
 </div>
 
-<script src='/socket.io/socket.io.js' type='text/jacascript'></script>
-<script ser='http://code.jquery.com/jquery-1.8.0.min.js'
-	type='text/javascript'></script>
-<script src='/javascripts/chat.js' type='text/jacascript'></script>
-<script src='/jacascripts/chat_ui.js' type='text/jacascript'></script>	
+<script src='/socket.io/socket.io.js' type='text/javascript'></script>
+<script src='http://code.jquery.com/jquery-1.8.0.min.js' type='text/javascript'></script>
+<script src='/javascripts/chat.js' type='text/javascript'></script>
+<script src='/javascripts/chat_ui.js' type='text/javascript'></script>
 </body>
 </html>

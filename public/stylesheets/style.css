@@ -7,22 +7,50 @@ a {
 	color: #00B7FF;
 }
 
+/* 應用程式為800圖素寬，並且水平置中 */
 #content {
 	width: 800px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
+/* 展示當前聊天室名稱之區域的CSS規則 */
 #room {
 	background-color: #ddd;
 	margin-bottom: 1em;
 }
 
+/* 訊息展示區域為690圖素寬，300圖素高 */
 #messages {
 	width: 690px;
 	height: 300px;
-	overflow: auto;
+	overflow: auto; /* 讓展示訊息的div在填滿內容時可以捲動 */
 	background-color: #eee;
 	margin-bottom: 1em;
-	margin-top: 10px;
+	margin-right: 10px;
+}
+
+#room-list {
+	float: right;
+	width: 100px;
+	height: 300px;
+	overflow: auto;
+}
+
+#room-list div {
+	border-bottom: 1px solid #eee;
+}
+
+#room-list div:hover {
+	background-color: #ddd;
+}
+
+#send-message {
+	width: 700px;
+	margin-bottom: 1em;
+	margin-right: 1em;
+}
+
+#help {
+	font: 10px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
